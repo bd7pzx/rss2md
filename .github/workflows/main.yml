@@ -17,7 +17,7 @@ jobs:
       - name: Run RSS Feed to Markdown Action
         uses: keiranlovett/rss-feed-to-markdown@main
         with:
-          feed_url: 'https://dgtea.site/feed'
+          feed_url_path: 'feed.rss'
           template_file: 'tp.md'
           output_dir: 'md'
           
