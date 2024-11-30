@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><channel><title><![CDATA[冬瓜blog]]></title><description><![CDATA[未来是未知的，道路也是未知的，但是我们都要走下去]]></description><link>https://dgtea.site</link><image><url>https://ipfs.crossbell.io/ipfs/QmS7wqBFwuf8tG8x3opzvTaDX8Ub4zqK5Z9EJaLupg53jK</url><title>冬瓜blog</title><link>https://dgtea.site</link></image><generator>RSS for Node</generator><lastBuildDate>Sat, 30 Nov 2024 19:05:47 GMT</lastBuildDate><atom:link href="https://dgtea.site/feed" rel="self" type="application/rss+xml"/><item><title><![CDATA[业余无线电的第一次VHF/UHF通联快速入门指南]]></title><description><![CDATA[0. 开始之前 教程只限于通过考试、设台的业余电台操作者，若没有获得呼号原则上不得发射
+ 确保你有由本省工信部核发的《中华人民共和国无线电台执照》，并在执照标记的通信范围内通联
+ 确保你有由 CRAC 颁发的《中国无线电协会业余电台操作证书》
+
+1. 检查天线
+
+天线的种类决定了你电台…]]></description><link>https://xlog.app/api/redirection?characterId=60902&amp;noteId=27</link><guid isPermaLink="false">60902-27</guid><category><![CDATA[post]]></category><dc:creator><![CDATA[冬瓜]]></dc:creator><pubDate>Mon, 01 Jul 2024 17:38:50 GMT</pubDate><content:encoded>&lt;h2 id=&quot;user-content-0-开始之前&quot;&gt;0. 开始之前&lt;/h2&gt;
+&lt;p&gt;教程只限于通过考试、设台的业余电台操作者，若没有获得呼号原则上不得发射&lt;br&gt;
+确保你有由本省工信部核发的《中华人民共和国无线电台执照》，并在执照标记的通信范围内通联&lt;br&gt;
+确保你有由 CRAC 颁发的《中国无线电协会业余电台操作证书》&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;user-content-1-检查天线&quot;&gt;1. 检查天线&lt;/h2&gt;
+&lt;p&gt;天线的种类决定了你电台信号的增益和指向性&lt;br&gt;
+・原装棒杆天线：垂直天线变种，在有高度的情况下非常万金油，通常为水平极化，但是增益不高。适合在离自己比较近的中继台上通联时使用&lt;br&gt;
+・另配的各种比原装棒杆长的天线及其变体：同上，增益可能会有差别&lt;br&gt;
+・拇指天线：小，发送效率相对低，通常为水平极化。适合在外出旅游或者接收强台时使用&lt;br&gt;
+・八木天线：体积相对大，方向性强。适合在知道通联目标位置的情况下使用&lt;/p&gt;
+&lt;h2 id=&quot;user-content-2-寻找对象&quot;&gt;2. 寻找对象&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;请先确定本省允许使用的频率范围&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;・直接通联（直频）：指的是不通过中继台直接和对象通联，通常使用的频率有&lt;code&gt;438.500MHz&lt;/code&gt;,&lt;code&gt;145.800MHz&lt;/code&gt;，按照地区差别可能会有改变&lt;br&gt;
+・中继台：指通过中继台的中转进行通联，国内的常用中继可&lt;a href=&quot;http://weixin.cqcqcq.cn/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;在此&lt;/a&gt;查询&lt;/p&gt;
+&lt;p&gt;两种方法在通联前均需要对所在频率进行守听，确保频率无人占用&lt;/p&gt;
+&lt;h2 id=&quot;user-content-3-设置电台&quot;&gt;3. 设置电台&lt;/h2&gt;
+&lt;p&gt;・直频：切换到电台的 VFO（频率）模式 —— 输入频点频率 —— 检查 VFO 的宽窄带等设置&lt;br&gt;
+・中继台：两种方法&lt;br&gt;
+1：VFO 临时上台&lt;br&gt;
+适用于双段双守电台&lt;br&gt;
+在 VFO A 设置中继的主（下行）频率 —— 在 VFO B 设置中继的上行频率 —— 设置 VFO B 的亚音 —— 检查 VFO A/B 的宽窄带等设置&lt;br&gt;
+2：写频上台&lt;br&gt;
+在写频软件中写入中继的主（下行）频率 —— 设置频差（+，-）—— 设置亚音 —— 设置宽窄带等&lt;/p&gt;
+&lt;p&gt;对中继台的特有名词：&lt;br&gt;
+・亚音：指 CTCSS（模拟亚音）/DCS（数字亚音），通过在语言信号中插入人耳不可辨的低频信号作为标记，使对讲机 / 中继台对信号进行选择性接收。按照中继台参数设置，xx.xHz 通常为 CTCSS（模拟亚音），Dxxx/DxxI 通常为 DCS (数字亚音)&lt;br&gt;
+・频差：指中继台的接受频率和发射频率的差值。标准差为 - 5MHz，即为在接受频率 - 5MHz 的频点上发射。按照中继台参数设置&lt;br&gt;
+・链路：指中继台通过网络等和其他地区的中继台或者对讲平台连接，能起到扩大覆盖范围的效果，常见的对讲平台有涛涛对讲，南山对讲，EchoLink 等。此类中继台上台时需要交换双方所使用的上台方式 / 频率&lt;br&gt;
+・回波：指中继台在发射结束后没有结束发射而在发射机上产生的噪声。可用于判断是否能通上中继台&lt;/p&gt;
+&lt;h2 id=&quot;user-content-4-通联&quot;&gt;4. 通联&lt;/h2&gt;
+&lt;p&gt;首先发起普遍呼叫（CQ）&lt;br&gt;
+&lt;/p&gt;&lt;p class=&quot;center&quot;&gt;CQ,CQ,CQ&lt;/p&gt;&lt;br&gt;
+&lt;p class=&quot;center&quot;&gt;这里是&lt;/p&gt;&lt;br&gt;
+&lt;p class=&quot;center&quot;&gt;（呼号的字母解释法）x2&lt;/p&gt;&lt;br&gt;
+&lt;p class=&quot;center&quot;&gt;（呼号）&lt;/p&gt;&lt;br&gt;
+&lt;p class=&quot;center&quot;&gt;请问频率上是否有友台抄收？&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;若有电台回应，则需要记录通联日志&lt;br&gt;
+必须记录下的有：&lt;br&gt;
+・时间，日期&lt;br&gt;
+・对方呼号&lt;br&gt;
+・双方的信号报告（RS)&lt;br&gt;
+可以记录下的有：&lt;br&gt;
+・双方功率&lt;br&gt;
+・双方 QTH&lt;/p&gt;
+&lt;p&gt;当结束通联时，双方均需要报出自己的呼号。通常会使用&lt;code&gt;73&lt;/code&gt;来为对方送上祝福&lt;/p&gt;
+&lt;h2 id=&quot;user-content-5-通联后&quot;&gt;5. 通联后&lt;/h2&gt;
+&lt;p&gt;通联之后可能会有电台向你索要 QSL 卡片或者收听证明，及时核对日志并回应这些电台的请求是业余电台的义务&lt;br&gt;
+对于以上两种卡片，必须包含的有：&lt;br&gt;
+・主动确认通联 / 证实对方的 QSL 的说明 (CFM QSO/CFM UR REPORT)&lt;br&gt;
+・我方呼号&lt;br&gt;
+・对方呼号 / 姓名&lt;br&gt;
+・通联时间&lt;br&gt;
+・通联频率&lt;br&gt;
+・通联模式（FM/FT8/SSB)&lt;br&gt;
+・信号报告&lt;br&gt;
+・请求对方寄出 QSL / 感谢对方寄来的 QSL 的说明（PSE/TNX)&lt;br&gt;
+通过适当的方式寄出即可&lt;/p&gt;</content:encoded></item><item><title><![CDATA[记一次一天从广州坐CR400AF-A到深圳爬梧桐山通联失败之后坐广惠地铁回家]]></title><description><![CDATA[事情的起因是重新看了一次向山进发 ，加上我的电台照下来了，于是决定在高考假的时候去爬梧桐山 写这篇文章也是为了祭奠我酸的批爆的腿
+
+去程坐的是在抢州南始发的抢铁的 G6211，本务 CR400AF-A-2098
+
+
+ 我的座位在 15 号车，理论上应该走过安检右边的口上站台会更近…]]></description><link>https://xlog.app/api/redirection?characterId=60902&amp;noteId=25</link><guid isPermaLink="false">60902-25</guid><category><![CDATA[post]]></category><dc:creator><![CDATA[冬瓜]]></dc:creator><pubDate>Sat, 08 Jun 2024 16:34:12 GMT</pubDate><content:encoded>&lt;p&gt;事情的起因是重新看了一次向山进发 ，加上我的电台照下来了，于是决定在高考假的时候去爬梧桐山&lt;br&gt;
+写这篇文章也是为了祭奠我酸的批爆的腿&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;user-content-0-美妙的开始--抢铁-g6211-广州南---深圳北&quot;&gt;0. 美妙的开始 —— 抢铁 G6211 广州南 - 深圳北&lt;/h2&gt;
+&lt;p&gt;去程坐的是在抢州南始发的抢铁的 G6211，本务 CR400AF-A-2098&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://ipfs.crossbell.io/ipfs/QmT7r8UgJM6h5UgPTYCfR3cnX43bH6FH3A9oe5sWMMvxpp&quot; alt=&quot;CR400AF-A-2098&quot;&gt;&lt;br&gt;
+我的座位在 15 号车，理论上应该走过安检右边的口上站台会更近，但是为了拍本务还是走了左边&lt;br&gt;
+&lt;img src=&quot;https://ipfs.crossbell.io/ipfs/QmY9aAAzaRUCHS5BHUmj8e2mmpAdrCaoTn7Lne9nx7fDS2&quot; alt=&quot;大地铁&quot;&gt;&lt;br&gt;
+这时我还看不起旁边的地铁，&lt;del&gt;然后就回旋镖了&lt;/del&gt;&lt;br&gt;
+&lt;img src=&quot;https://ipfs.crossbell.io/ipfs/QmVCGK9m96zs6hPQoHzLZDdwq6bQFeR4i2zcC8D47Bjtrz&quot; alt=&quot;拉座位&quot;&gt;&lt;br&gt;
+这次车的空座率非常高，一节一等座车厢只有加上我一共四个人，体验非常好，除了复兴号的车厢还是这么法拉第笼，手机完全不能测速之外。&lt;br&gt;
+&lt;img src=&quot;https://ipfs.crossbell.io/ipfs/QmYxp7uthij7Q7vvYniJMfzdGS94YFwjFZbphRTEB57Pko&quot; alt=&quot;wx_camera_1717722794354&quot;&gt;&lt;br&gt;
+半个小时的车程到达深圳北站，接下来就是去梧桐山了。&lt;br&gt;
+&lt;img src=&quot;https://ipfs.crossbell.io/ipfs/QmUYN7t7VLYAM92QpKtGB8ARaj8EtqufB56ZtioBbUx8To&quot; alt=&quot;wx_camera_1717722870211&quot;&gt;&lt;br&gt;
+讲真，有人来深圳旅游吗&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;user-content-1-折磨的预兆--深圳地铁-深圳北---梧桐山南&quot;&gt;1. 折磨的预兆 —— 深圳地铁 深圳北 - 梧桐山南&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://ipfs.crossbell.io/ipfs/Qmb3A6J326YY59hf5YzrJv3aH5hrBfRRKz5uJVTxcpbWEV&quot; alt=&quot;深圳地铁&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://ipfs.crossbell.io/ipfs/QmcgasndRMZtm5hyLXvjgNFGKG7FdgorU3Yw4cxvbuEY5P&quot; alt=&quot;image&quot;&gt;&lt;/p&gt;
+&lt;p&gt;深圳地铁的站台标识做的不能说和 mtr 像吧，只能说一模一样，倒是没什么特别的体验，非常常规&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://ipfs.crossbell.io/ipfs/QmYDToJWYPLvZGNUbQYd1HwL3TwGFqTanzwqt7jsLC2Zry&quot; alt=&quot;image&quot;&gt;&lt;/p&gt;
+&lt;p&gt;出站左转就是梧桐山的牌坊，往上走就能到凌云道的入口&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://ipfs.crossbell.io/ipfs/QmUYuafvWwDkv8VEt8otJ64CHNnryrdVszVHZh7ZkTbHny&quot; alt=&quot;image&quot;&gt;&lt;/p&gt;
+&lt;p&gt;凌云道是梧桐山强度最大的一条道，这个事情我当时完全不知道。于是我遇到的是这种路：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://ipfs.crossbell.io/ipfs/Qmayr4jBkSJjPegfULLGVoXzTJhBdo1VjxNjPCeMgnLEK5&quot; alt=&quot;image&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://ipfs.crossbell.io/ipfs/QmPEJVKvhTZPdRoyLNBHFdDzXJwrVKnUMFEKBQK2gs1Tyt&quot; alt=&quot;image&quot;&gt;&lt;br&gt;
+爬到一半的景色还是不错的，能看遍全深圳&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://ipfs.crossbell.io/ipfs/QmYe21iPtMCKfSemqTWmxkau7X7zFD67FUAc1uRxb5RmuJ&quot; alt=&quot;image&quot;&gt;&lt;br&gt;
+再往上就啥都看不见了&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://ipfs.crossbell.io/ipfs/QmY6e7Sum2ZK9WgQp3FP6SPZtwfKq29sKdT9TNUcRFsGQj&quot; alt=&quot;image&quot;&gt;&lt;br&gt;
+总之，爬了一个多小时之后就能到达终点了，也就是小梧桐&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://ipfs.crossbell.io/ipfs/QmQXHvioWDS3uB43atJhKTqDVpGfQthEaEAzyxJaMyyJdo&quot; alt=&quot;image&quot;&gt;&lt;br&gt;
+这个塔是深圳电视塔，还在不在发射不知道，不过深圳梧桐山的中继应该是在这附近&lt;br&gt;
+于是我掏出手台准备通联，结果呼了一分钟没有回馈&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://ipfs.crossbell.io/ipfs/QmSWrA4GTcYbszt6hinYaZn7t4L9BT3zTBLznPUdEZdQpP&quot; alt=&quot;image&quot;&gt;&lt;br&gt;
+突然想起来：今天高考，中继台关了&lt;br&gt;
+于是这趟旅行的首要目的就未能达成，非常遗憾&lt;/p&gt;
+&lt;h2 id=&quot;user-content-2-噩梦开始-下山---深铁---莞-216---莞轨&quot;&gt;2. 噩梦开始 下山 - 深铁 - 莞 216 - 莞轨&lt;/h2&gt;
+&lt;p&gt;如果我当时直接从原路返回的话，我可能现在肌肉会更舒服一点，但很显然我没有&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://ipfs.crossbell.io/ipfs/QmWcx1oh7y5JH1RU5g45Yoz6ccyWuCycTeT6zhBvs1y97W&quot; alt=&quot;image&quot;&gt;&lt;/p&gt;
+&lt;p&gt;山顶往前走一段路就可以到达梧桐山顶站，就是雾里面的那个不明方块&lt;br&gt;
+我觉得这种画风很像静寂岭来着&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://ipfs.crossbell.io/ipfs/QmVjpz5PEtu2JijY1NgyeUnF2zpqKhFkamUJ3Wqj5DMmoq&quot; alt=&quot;image&quot;&gt;&lt;/p&gt;
+&lt;p&gt;总共十分钟的路程花费了我十块钱，抢铁后继有人，我愿称之为抢巴&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://ipfs.crossbell.io/ipfs/QmQfddV9WYmrKWT1dQDrTQouk5tEvF5LHoduXYhex5TB1M&quot; alt=&quot;image&quot;&gt;&lt;br&gt;
+车站终点是好汉坡，重复之前的爬坡动作后就能到达梧桐山真正的山顶，海拔 792m&lt;/p&gt;
+&lt;video&gt;
+  &lt;source src=&quot;https://ipfs.crossbell.io/ipfs/QmXQfBxpz9xBTDcF44Xv6Ki9YBTKX2aHgB11DFpjTUR7zb&quot; type=&quot;video/mp4&quot;&gt;
+&lt;/video&gt;
+&lt;p&gt;然后就是下山了，下山走的是碧桐道，这山的路名字这么好听，强度这么大，不知道怎么想的&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://ipfs.crossbell.io/ipfs/QmQhCcizSr4nb1WW3othF8DYZN3MuxQApmbZ6FbhRgid4b&quot; alt=&quot;image&quot;&gt;&lt;br&gt;
+下山的路更是有一半不是石板路，都是像这样子的石块，我不知道能不能称之为路&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://ipfs.crossbell.io/ipfs/QmR9uJ4aXVH1c4hLDGdcrjM1vsJnLrRspxdi5VFcdAZF1n&quot; alt=&quot;image&quot;&gt;&lt;br&gt;
+还有一个小插曲，我的手机主卡没有关漫游，于是中国电信贴心的给我漫游到了香港，扣了我 25 块钱&lt;br&gt;
+&lt;img src=&quot;https://ipfs.crossbell.io/ipfs/QmNX7tkN1pQmpQ4LNb9ErtENdo37MNdoa3pUfoRmzDnkjK&quot; alt=&quot;image&quot;&gt;&lt;br&gt;
+下山下了两个小时，我的腿都在抖&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://ipfs.crossbell.io/ipfs/QmVgkV1WXpAFsRTXqHSsQ9U5jZrFpm7giS4c378NzjJbD5&quot; alt=&quot;image&quot;&gt;&lt;br&gt;
+接下来就是坐地铁到东莞了&lt;br&gt;
+上车车站是深外高中，离山脚有点距离&lt;br&gt;
+就是这个装修屏蔽是认真的？还有起码 600 米的入口 - 站台间距，实在难以想象这是深圳地铁，不过毕竟是郊区，有地铁就不错了，刚好能让腿放松一下，二号线的整体体验也挺不错&lt;br&gt;
+&lt;img src=&quot;https://ipfs.crossbell.io/ipfs/QmZz1iZedsqg7aPF417rTM8E5TQVJWts9B7gGqgCH95jwu&quot; alt=&quot;image&quot;&gt;&lt;br&gt;
+商！务！座！&lt;br&gt;
+这个玩意在 mtr 坑了我 70 块钱，没想到在这里也有&lt;br&gt;
+虽然当务之急是去找个座位休息，花点钱也没啥，但是深圳地铁居然不支持交通联合卡坐商务座，无法理解&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://ipfs.crossbell.io/ipfs/QmafmZtXQfwL3jAwQ6RmaM6Z5FnSYKPQpmGqBX6szprDTt&quot; alt=&quot;image&quot;&gt;&lt;br&gt;
+坐到碧头之后准备出闸，但是不知道是什么原因，闸机刷卡出不去，站务系统也没有办法扣款，听 staff 小姐姐的说法是这种异地联合卡在深铁的兼容性并不好。最后是在自助机解决的，但是吧……&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://ipfs.crossbell.io/ipfs/QmUYDjKpoPon7EnSi5fcSYrWXRVJ7hZvhJ5BzjsrT4pUXW&quot; alt=&quot;image&quot;&gt;&lt;/p&gt;
+&lt;p&gt;你这个刷卡时间是怎么回事，我啥时候穿越了？&lt;br&gt;
+总之，12 块钱的地铁只花了两块钱，还是挺赚的&lt;br&gt;
+接下来就是莞 216 路摇摇车，很幸运地抢到了座位&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://ipfs.crossbell.io/ipfs/QmbQRTvf94Fc6RHAw3SXvDM586jnt6u787cUrBupsgeW3q&quot; alt=&quot;image&quot;&gt;&lt;br&gt;
+摇了一个小时四十分钟之后，总算是到了东莞轨道交通二号线的虎门火车站站&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://ipfs.crossbell.io/ipfs/QmeLeqd5cxmuv19cXEDJsSoEmFm7hngabT6CH97tVyxft1&quot; alt=&quot;image&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;user-content-3-噩梦的终结--广东城际---广州地铁&quot;&gt;3. 噩梦的终结 —— 广东城际 - 广州地铁&lt;/h2&gt;
+&lt;p&gt;乘地铁到达西平西站后，就能换成我们伟大的广东城际。我从未如此渴望过坐 CRH6A&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://ipfs.crossbell.io/ipfs/QmeLeqd5cxmuv19cXEDJsSoEmFm7hngabT6CH97tVyxft1&quot; alt=&quot;image&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://ipfs.crossbell.io/ipfs/QmQsxKen86uZKC7NxBeBCzTuzgGpY4smdBocccrnRP7Nic&quot; alt=&quot;image&quot;&gt;&lt;/p&gt;
+&lt;p&gt;我坐的车是快车，西平西后只停东莞东便可到达广州长隆站&lt;br&gt;
+本务是 CRH6A-0603, 车身上部有一条橘色的标识，挺帅&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://ipfs.crossbell.io/ipfs/QmZqf6Mp4SpCQSDryDeHHJxpQNDCxpjvrRCZGMuLdcwPi8&quot; alt=&quot;image&quot;&gt;&lt;br&gt;
+客流量非常优秀，上车之后完全没有机会坐&lt;br&gt;
+不知道是要夸奖还是要批斗他好，这时候我的腿已经没有知觉了，所以无所谓&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://ipfs.crossbell.io/ipfs/QmUgdH9Pg4hsDEe1iGLPyEuqmr1UXSyBSQsSW2eH8KVW6J&quot; alt=&quot;image&quot;&gt;&lt;br&gt;
+速度方面能跑上 190 的极速，还是很好的&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://ipfs.crossbell.io/ipfs/QmW8KGEswSQhY9oBhfjG6N38NaLigQpQckp4qbkMT46wNq&quot; alt=&quot;image&quot;&gt;&lt;br&gt;
+到达广州长隆之后，需要出站换乘大概 700m 到达广州地铁七号线，我的行程也就到此结束了&lt;/p&gt;
+&lt;h2 id=&quot;user-content-9-感想&quot;&gt;9. 感想？&lt;/h2&gt;
+&lt;p&gt;这次行程除了上午的抢铁城际和山上的大巴之外，可以说是车票效益最大化了，即使不算深铁少扣的十二块也是相当可观的支出控制&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://ipfs.crossbell.io/ipfs/QmRs4EHBRbn7gLJrqipf4kHUwZJ6SkPuYXkno6Q9ShyrC3&quot; alt=&quot;image&quot;&gt;&lt;br&gt;
+不过如果是问我想不想再经历这种行程的话，我应该还是会给出 “是” 的答案吧&lt;br&gt;
+旅途劳累的根源其实不在于交通通勤，而是爬山。爬山的路上我也问过自己很多遍 “要不要到此为止了”“干脆放弃吧”，&lt;code&gt;但其实爬完的原因是没有回头路走了&lt;/code&gt;，就是这种看起来让人忍俊不禁 的理由支撑着我到达了终点。而选择公交，则纯粹是我个人的爱好。正如我妈在电话里说的 “你的爱好怎么这么奇怪”，我也这么觉得，完全是无厘头。&lt;br&gt;
+但是，我的确享受了这趟旅程，无论是 400AF 还是 6A，公交还是地铁，他们给我带来的旅程体验和飞机、私家车是完全不同的。传送一样的出行方式可能对我来说不适合旅行。旅行不止在目的地，更会在旅途中。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;到这里的时候，我还因为全身酸痛在床上痛苦地躺尸&lt;br&gt;
+真爱生命，远离梧桐山&lt;/p&gt;</content:encoded></item><item><title><![CDATA[广东省未成年人业余无线电设台指北]]></title><description><![CDATA[Copy 业余无线电台管理办法
+第八条 未成年人可以设置、使用工作在30-3000MHz频段且最大发射功率不大于25瓦的业余无线电台。
+
+
+我当时看到这个啊 我就兴奋了
+ 哥们五百年前考的证总算能设台了
+ 现在呼号下来了，来写点我遇到的坑
+
+设台的前提是考取由 CRAC 颁发的业余无线电…]]></description><link>https://xlog.app/api/redirection?characterId=60902&amp;noteId=24</link><guid isPermaLink="false">60902-24</guid><category><![CDATA[post]]></category><dc:creator><![CDATA[冬瓜]]></dc:creator><pubDate>Fri, 31 May 2024 21:28:56 GMT</pubDate><content:encoded>&lt;div class=&quot;code-wrapper&quot;&gt;&lt;button type=&quot;button&quot; class=&quot;copy-button&quot;&gt;&lt;span class=&quot;i-mingcute-copy-2-line&quot;&gt;&lt;/span&gt;&lt;span&gt;Copy&lt;/span&gt;&lt;/button&gt;&lt;pre&gt;&lt;code&gt;业余无线电台管理办法
+第八条 未成年人可以设置、使用工作在30-3000MHz频段且最大发射功率不大于25瓦的业余无线电台。
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;我当时看到这个啊 我就兴奋了&lt;br&gt;
+哥们五百年前考的证总算能设台了&lt;br&gt;
+现在呼号下来了，来写点我遇到的坑&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;设台的前提是考取由 CRAC 颁发的&lt;code&gt;业余无线电台操作资格证书&lt;/code&gt;, 考试内容不再纂述。&lt;br&gt;
+你需要到&lt;a href=&quot;http://www.gdradio.gd.gov.cn:18084/RsApply/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;这里&lt;/a&gt;填写&lt;code&gt;业余无线电台设置、使用申请表&lt;/code&gt;，拍摄你的设备的核准码、序列号、正面外观，然后到&lt;code&gt;广东政务服务中心&lt;/code&gt;的&lt;a href=&quot;https://www.gdzwfw.gov.cn/portal/v3/guide/11440100007482567N344010401300307&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;这里&lt;/a&gt;提交资料&lt;br&gt;
+需要注意：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;全国范围设台需要填写一张设台理由说明书，我懒得搞了，所以就拿了省内&lt;/li&gt;
+&lt;li&gt;未成年人设台需要监护人在申请表上一同签名，同时提交监护人知情书（xxx（身份证：***）为 yyy 的父 / 母，了解并同意 yyy 设立业余无线电台 balabala）、户口本首页、监护人页、申请人页或是其他可以证明监护人和申请人关系的材料&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;查询进度并不能在政务中心直接查询，需要到专门的&lt;a href=&quot;https://bsxt.gdzwfw.gov.cn/UnifiedReporting/affairs/index&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;办事系统&lt;/a&gt;查询，最狗屎的一集&lt;br&gt;
+总共用时差不多是五日办结，办结后可以在&lt;code&gt;粤省事&lt;/code&gt;的&lt;code&gt;数字中心&lt;/code&gt;查到数字证书&lt;br&gt;
+很糊，发到邮箱会好很多&lt;br&gt;
+&lt;img src=&quot;https://ipfs.crossbell.io/ipfs/QmNXfoqHvv4s3VKNpTwfL6RVjegtRt7B6VxmADBNzWA2vn&quot; alt=&quot;photo_2024-06-01_05-27-53&quot;&gt;&lt;br&gt;
+就到这里 DE BD7PZX&lt;/p&gt;</content:encoded></item><item><title><![CDATA[BGP/ASN折腾笔记]]></title><description><![CDATA[感觉又开了个烧钱的东西 0. 注册 RIR
+
+使用的事RIPE
+ 怎么注册网上一大堆，懒得再写
+ 不过有些教程过期，需要自己琢磨
+ 都想玩 BGP 了这点能力肯定有吧
+
+1. 在 LIR 处购买 ASN
+
+待续
+ 操你妈一年 50 刀抢钱呢]]></description><link>https://xlog.app/api/redirection?characterId=60902&amp;noteId=16</link><guid isPermaLink="false">60902-16</guid><category><![CDATA[post]]></category><dc:creator><![CDATA[冬瓜]]></dc:creator><pubDate>Wed, 31 Jan 2024 01:08:31 GMT</pubDate><content:encoded>&lt;p&gt;感觉又开了个烧钱的东西&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;user-content-0-注册-rir&quot;&gt;0. 注册 RIR&lt;/h2&gt;
+&lt;p&gt;使用的事&lt;a href=&quot;https://ripe.net&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;RIPE&lt;/a&gt;&lt;br&gt;
+怎么注册网上一大堆，懒得再写&lt;br&gt;
+不过有些教程过期，需要自己琢磨&lt;br&gt;
+&lt;del&gt;都想玩 BGP 了这点能力肯定有吧&lt;/del&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;user-content-1-在-lir-处购买-asn&quot;&gt;1. 在 LIR 处购买 ASN&lt;/h2&gt;
+&lt;p&gt;待续&lt;br&gt;
+&lt;del&gt;操你妈一年 50 刀抢钱呢&lt;/del&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[迁移到xLog]]></title><description><![CDATA[字面意思，现在开始估计就在 xLog 写了 原因其实挺简单的，这个平台能给我完整的写作体验，而不用去担心部署啊图床啊的问题，非常难得
+ 总之
+ 之前在 Pages 的页面会留存在这里
+ 然后就是页面迁移，把储存桶的访问限制解开就可以迁移全部图片了，期待]]></description><link>https://xlog.app/api/redirection?characterId=60902&amp;noteId=21</link><guid isPermaLink="false">60902-21</guid><category><![CDATA[post]]></category><dc:creator><![CDATA[冬瓜]]></dc:creator><pubDate>Tue, 30 Jan 2024 18:47:39 GMT</pubDate><content:encoded>&lt;p&gt;字面意思，现在开始估计就在 xLog 写了&lt;br&gt;
+原因其实挺简单的，这个平台能给我完整的写作体验，而不用去担心部署啊图床啊的问题，非常难得&lt;br&gt;
+总之&lt;br&gt;
+之前在 Pages 的页面会留存在&lt;a href=&quot;https://hexo.dgtea.site&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;这里&lt;/a&gt;&lt;br&gt;
+然后就是页面迁移，把储存桶的访问限制解开就可以迁移全部图片了，期待&lt;/p&gt;</content:encoded></item><item><title><![CDATA[对IPFS的一点研究]]></title><description><![CDATA[IPFS 差不多是几年前区块链火的时候的概念 我的理解就是把你的文件放到链上，用 hash 值访问
+ eg：
+ 一个导航页，可以用IPNS和IPFS访问
+ IPNS 可以理解为是 IPFS 里面的 DNS 服务器，搭配 DNSLink 使用
+ 比如_dnslink.dgtea.site…]]></description><link>https://xlog.app/api/redirection?characterId=60902&amp;noteId=10</link><guid isPermaLink="false">60902-10</guid><category><![CDATA[post]]></category><dc:creator><![CDATA[冬瓜]]></dc:creator><pubDate>Mon, 29 Jan 2024 03:42:02 GMT</pubDate><content:encoded>&lt;p&gt;IPFS 差不多是几年前区块链火的时候的概念&lt;br&gt;
+我的理解就是把你的文件放到链上，用 hash 值访问&lt;br&gt;
+eg：&lt;br&gt;
+一个导航页，可以用&lt;a href=&quot;https://ipfs.io/ipns/k51qzi5uqu5dl5dxaor7twrv067wl23ec6i283gzw4fa09zjfw6fv3scth9k1g&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;IPNS&lt;/a&gt;和&lt;a href=&quot;https://ipfs.crossbell.io/ipfs/QmaPqMkMm2gzjyWvfw2t73cPZsopr5BWb1tGSrh8uzhaVE&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;IPFS&lt;/a&gt;访问&lt;br&gt;
+IPNS 可以理解为是 IPFS 里面的 DNS 服务器，搭配 DNSLink 使用&lt;br&gt;
+比如_dnslink.dgtea.site 就指向了&lt;code&gt;QmaPqMkMm2gzjyWvfw2t73cPZsopr5BWb1tGSrh8uzhaVE&lt;/code&gt;这串 CID，所以可以用网关直接访问：&lt;a href=&quot;https://ipfs.io/ipns/dgtea.site/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;https://ipfs.io/ipns/dgtea.site/&lt;/a&gt;&lt;br&gt;
+其 CID（IPFS 里的文件 ID）为&lt;code&gt;QmaPqMkMm2gzjyWvfw2t73cPZsopr5BWb1tGSrh8uzhaVE&lt;/code&gt;&lt;br&gt;
+上传文件后需要 pin，否则会丢 pin 就相当于让一个节点保持你的文件&lt;br&gt;
+&lt;del&gt;可以用 DNSLink 将其映射到普通域名，但是不去中心化，不 libre&lt;/del&gt;有误，应该是用实际域名当短链接？&lt;br&gt;
+而 ENS（以太坊域名解析系统）的.eth 域名一年 17 刀，玩不起玩不起&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;就先搞到这里，剩下的之后再写&lt;/p&gt;</content:encoded></item><item><title><![CDATA[新的一年，2024]]></title><description><![CDATA[感觉 2023 过得好快，好梦幻 一下子就到 2024 了 上一年也是发生了很多的事情，虽然没多少是好事就是了
+ 心里越来越爆炸，成绩也是在稳步下滑
+ 怎么好像每次写东西都是负能量
+ 其实还好，毕竟除了某些视奸的 sb之外也没有人会看这里了
+ 每个人都是如此，在匿名化的城市生活中更甚
+ 擦…]]></description><link>https://xlog.app/api/redirection?characterId=60902&amp;noteId=17</link><guid isPermaLink="false">60902-17</guid><category><![CDATA[post]]></category><dc:creator><![CDATA[冬瓜]]></dc:creator><pubDate>Sun, 28 Jan 2024 23:30:21 GMT</pubDate><content:encoded>&lt;p&gt;感觉 2023 过得好快，好梦幻 一下子就到 2024 了&lt;br&gt;
+上一年也是发生了很多的事情，虽然没多少是好事就是了&lt;br&gt;
+心里越来越爆炸，成绩也是在稳步下滑&lt;br&gt;
+&lt;del&gt;怎么好像每次写东西都是负能量&lt;/del&gt;&lt;br&gt;
+其实还好，毕竟除了某些&lt;a href=&quot;https://scc.lol&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;视奸的 sb&lt;/a&gt;之外也没有人会看这里了&lt;br&gt;
+每个人都是如此，在匿名化的城市生活中更甚&lt;br&gt;
+擦肩而过的人不会在意你是谁，也许昨天还和你相谈甚欢的人转眼就同你兵戈相向&lt;br&gt;
+如此的社会，只能在里面苟延残喘，在不存在的虚拟世界里寻找慰籍&lt;br&gt;
+这可能也能解释为什么当代人的心理疾病如此普遍的存在了吧&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;期中考完试回来，算是和家里人吵了一架，然后把补习班停了&lt;br&gt;
+结果可想而知，雪上加霜&lt;br&gt;
+让我很好奇的一点是，为什么我的语文能考这个分数&lt;br&gt;
+区里面 2.8k/3.2k 无论如何都很逆天了 &lt;del&gt;也许我不是中国人&lt;/del&gt;&lt;br&gt;
+对未来的期望也算是越来越渺茫，不知道要干什么，学期的最后两个星期可以算是真正的浑浑噩噩了&lt;br&gt;
+然而向以前看去，依稀记得我并不是这么颓废&lt;br&gt;
+到底是我的原因还是其他，找出所谓 “真凶” 也并无意义&lt;br&gt;
+大抵是落差导致的吧，每次都努力了，但是每次都换不出来自己想要的成绩，于是就这样躺平摆烂，我觉得像我这样的人应该不算少数&lt;br&gt;
+但是，我记得我是有梦想的，不过我早就忘记它是什么了&lt;br&gt;
+多么讽刺的一件事，作为人成长动力的梦想居然会被遗忘之类的，换作是之前的我，估计也不会想到这一出&lt;br&gt;
+搞无线电，搞音乐，搞摄影 balabala，都是如此遥不可及的梦&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;我不知道我要去做什么&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;现在的我，感觉每天都很充实，但是仔细一想，又是如此空虚无力&lt;br&gt;
+500px 的图没人看，投稿过不了，无线电呼号下不来，骑车速度上不去&lt;br&gt;
+好像我是万金油一般的，啥啥都会，啥啥不行&lt;br&gt;
+这么一想，我大抵是辜负了很多人的期待吧&lt;br&gt;
+小升初没考好，初升高没考好，也许高考也考不好吧&lt;br&gt;
+虽说人生并不只有考试和学习，但是在这个科举制的社会环境下，我所在的社会阶层的命运早已经被确定好了&lt;br&gt;
+让我想起之前看过的一个段子:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;中国的游戏需要有教育意义，电影需要有教育意义，音乐需要有教育意义&lt;br&gt;
+但是学习不用，学习是用来筛选的&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;我突然释怀的笑.jpg&lt;br&gt;
+也许只有在这种时刻，才能感受到自己的无力感&lt;br&gt;
+&lt;strong&gt;14 亿分之一的力量太渺小了，渺小到无法改变任何事&lt;/strong&gt;&lt;br&gt;
+自我就在由 14 亿人组成的洪流之间漂浮不定，你若是想逆着大流走，即便你做的是正确的，也会被人群起而攻之&lt;br&gt;
+依稀记得，好像民国在大陆的时期也是如此？&lt;br&gt;
+毕竟成王败寇，自古以来的道理&lt;br&gt;
+无法追求绝对的自由，无法追求绝对的公正，而越是如此，对其的渴望就愈加强烈，愈加痛苦&lt;br&gt;
+这个社会需要愚人，不需要思考&lt;br&gt;
+btw，写这些东西让我像是那种 12 岁网络觉醒的愤青小学生&lt;br&gt;
+不过还是写吧，毕竟我还能拥有写作的权利&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;牢骚发完了，说下最近的事情吧&lt;br&gt;
+在学校组的乐队最近总算演出了，虽然只是年级内部的&lt;br&gt;
+在台上激情罚站，下面的人看了都尴尬&lt;br&gt;
+总体效果不算非常好，但是我们挺满意的&lt;br&gt;
+然后，最近开始去拍火车了&lt;br&gt;
+广深铁路上面，现在拍到的车还算多，1A,6A,380,300AF,400AF,SS8,HXD1D, 确实挺有意思&lt;br&gt;
+不过广深铁路的车在白天的种类可能也不是很多，要试试晚上去拍了&lt;br&gt;
+emm，还有什么可以写吗&lt;br&gt;
+哦对，之前也写了点东西来着，但是文件丢了，wayback machine 也没有，就让他随风飘散吧&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;这里应该写一个结尾，但是我不想写&lt;br&gt;
+总之，希望我能走上不后悔的路&lt;/p&gt;
+&lt;p&gt;EOF&lt;/p&gt;</content:encoded></item><item><title><![CDATA[在Cloudflare Pages上部署Hexo]]></title><description><![CDATA[如题，写个教程 hexo 的配置很简单，跟着官方教程走就行
+
+1. 配置 Node.js/Git
+
+sudo apt install git-core
+ sudo apt install nodejs
+
+2. 安装 hexo 本体
+
+npm install hexo-cli -g
+ 会遇到…]]></description><link>https://xlog.app/api/redirection?characterId=60902&amp;noteId=15</link><guid isPermaLink="false">60902-15</guid><category><![CDATA[post]]></category><dc:creator><![CDATA[冬瓜]]></dc:creator><pubDate>Sun, 17 Dec 2023 01:31:24 GMT</pubDate><content:encoded>&lt;h2 id=&quot;user-content-如题写个教程&quot;&gt;如题，写个教程&lt;/h2&gt;
+&lt;h2 id=&quot;user-content-一配置-hexo&quot;&gt;一。配置 hexo&lt;/h2&gt;
+&lt;p&gt;hexo 的配置很简单，跟着官方教程走就行&lt;/p&gt;
+&lt;h2 id=&quot;user-content-1-配置-nodejsgit&quot;&gt;1. 配置 Node.js/Git&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;sudo apt install git-core&lt;/code&gt;&lt;br&gt;
+&lt;code&gt;sudo apt install nodejs&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&quot;user-content-2-安装-hexo-本体&quot;&gt;2. 安装 hexo 本体&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;npm install hexo-cli -g&lt;/code&gt;&lt;br&gt;
+会遇到报错，执行下列命令&lt;br&gt;
+&lt;code&gt;mkdir ~/.npm-global&lt;/code&gt;&lt;br&gt;
+&lt;code&gt;npm config set prefix &apos;~/.npm-global&apos;&lt;/code&gt;&lt;br&gt;
+&lt;code&gt;export PATH=~/.npm-global/bin:$PATH&lt;/code&gt;&lt;br&gt;
+&lt;code&gt;source ~/.profile&lt;/code&gt;&lt;br&gt;
+&lt;code&gt;npm install -g jshint&lt;/code&gt;&lt;br&gt;
+执行完毕后重新安装 hexo&lt;br&gt;
+安装完成后执行&lt;br&gt;
+&lt;code&gt;echo &apos;PATH=&quot;$PATH:./node_modules/.bin&quot;&apos; &gt;&gt; ~/.profile&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&quot;user-content-二配置-wrangler-cloudflare&quot;&gt;二。配置 wrangler (Cloudflare)&lt;/h2&gt;
+&lt;p&gt;首先，确保你有一个 Cloudflare 账号并登录&lt;br&gt;
+&lt;code&gt;npm install wrangler --save-dev&lt;/code&gt;&lt;br&gt;
+&lt;code&gt;wrangler login&lt;/code&gt;&lt;br&gt;
+随后会在默认浏览器打开登录页面，登录即可&lt;/p&gt;
+&lt;h2 id=&quot;user-content-三编写内容&quot;&gt;三。编写内容&lt;/h2&gt;
+&lt;p&gt;Hexo 的使用不再阐述，请自行至官网查询&lt;/p&gt;
+&lt;h2 id=&quot;user-content-四上传&quot;&gt;四。上传&lt;/h2&gt;
+&lt;p&gt;打开终端，切换至 Hexo 的根目录，确保当前目录下有&lt;code&gt;public&lt;/code&gt;文件夹&lt;br&gt;
+执行&lt;code&gt;wranger pages deploy public&lt;/code&gt;&lt;br&gt;
+选择&lt;code&gt;Create a new project&lt;/code&gt;，在下一步输入你的 blog 的名字，这也是这个 Pages 的名字&lt;br&gt;
+在&lt;code&gt;Enter the production branch name&lt;/code&gt;这一步可以直接回车&lt;br&gt;
+之后出现&lt;code&gt;Deployment complete!&lt;/code&gt;就代表发布成功了，后面的链接就是这一次的发布的预览链接&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;user-content-常见问题&quot;&gt;常见问题&lt;/h2&gt;
+&lt;h2 id=&quot;user-content-hexowrangler-执行出现-command-not-found&quot;&gt;hexo，wrangler 执行出现 command not found&lt;/h2&gt;
+&lt;p&gt;npm 环境变量没配置好导致的，在执行的代码前加入&lt;code&gt;npx &lt;/code&gt;即可&lt;/p&gt;</content:encoded></item><item><title><![CDATA[《铃芽之旅》的个人感受]]></title><description><![CDATA[这部片按我的评价标准来说，能算是很好的一部片了，叫他是新海诚集大成之作不是没有原因的。
+
+00x 剧情
+
+剧情来说，就是传统的日漫套路，男女主拯救世界，貌似新海诚的几部作品都是这样……
+ 但也不是说他不好看，新海诚擅长什么呢，我认为他擅长去把原本平凡的东西不凡化…]]></description><link>https://xlog.app/api/redirection?characterId=60902&amp;noteId=9</link><guid isPermaLink="false">60902-9</guid><category><![CDATA[post]]></category><dc:creator><![CDATA[冬瓜]]></dc:creator><pubDate>Sun, 26 Mar 2023 02:36:28 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://blog-1258513008.cos.ap-guangzhou.myqcloud.com/IMG_20230325_230820.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+这部片按我的评价标准来说，能算是很好的一部片了，叫他是新海诚集大成之作不是没有原因的。&lt;/p&gt;
+&lt;h2 id=&quot;user-content-00x-剧情&quot;&gt;00x 剧情&lt;/h2&gt;
+&lt;p&gt;剧情来说，就是传统的日漫套路，男女主拯救世界，貌似新海诚的几部作品都是这样……&lt;br&gt;
+但也不是说他不好看，新海诚擅长什么呢，我认为他擅长去把原本平凡的东西不凡化。天气之子就是一个很明显的例子 —— 我在看天气之子的小说的时候没有被震撼到或者被剧情所触动，因为剧情太常见了，以至于我已经知道了他要说什么。&lt;br&gt;
+但是转到电影上就不一样，新海诚的画面表现力是无与伦比的，搭配上 RADWIMPS 的配乐简直可以碾压一众电影，包括某个春节票房 no.1（绝对不是满江红），音乐鼓点和动画节奏的把握让新海诚给了观众一个无与伦比的观影体验，&lt;del&gt;反正我全程憋尿看完了&lt;/del&gt;&lt;br&gt;
+很奇怪，明明是这么简单的剧情套路，中国怎么就做不出来呢？也许是我把这项工作想的太简单了，亦或许是现在的大环境不适合创作者创作吧。&lt;br&gt;
+剧情内容就不剧透了，可以触动我。&lt;/p&gt;
+&lt;h2 id=&quot;user-content-001x-作画&quot;&gt;001x 作画&lt;/h2&gt;
+&lt;p&gt;不用说，顶级。&lt;br&gt;
+之前有人说，我不会画画就不要去对别人的画面评头论足，但是也不可能所有的观众都会画画，我就以一位普通观众的视角以我的知识讨论他的作画吧。&lt;br&gt;
+很明显的是他的日漫画风&lt;del&gt;废话别人日本人&lt;/del&gt;，整部片的色彩鲜艳，饱和度高却不会使人有不适感，非常和谐……&lt;br&gt;
+好吧我编不下去了，总之就是非常好看，绝对配得上他的名号，截图当壁纸也是很好的。&lt;/p&gt;
+&lt;h2 id=&quot;user-content-010x-配乐&quot;&gt;010x 配乐&lt;/h2&gt;
+&lt;p&gt;在我看这部电影之前就有同学跟我说了这部片的主题曲很好听，我听了也确实很好听。如果按照我心目中音乐排行来算的话，《Suzume》这首歌绝对能进前五。不是第一的原因也许是 J-Pop 听多了，没有一开始给我的震撼感，但是这首歌作为 RADWIMPS 的作品是绝对合格甚至超前的。&lt;br&gt;
+除去 OP、ED，电影内的配乐也不错，就像在剧情那里写的一样，音乐鼓点和剧情节奏完美和在一起，这也使得《铃芽之旅》这部片成功的一大原因，配乐中穿插的人声合奏搭配剧情的推进，实话实说，我被深深的震撼到了，上一次如此震撼还是 YOASOBI 的《群青》高潮开头段，早已经是三年前，当然，剧情本身的功劳也不可或缺。&lt;/p&gt;
+&lt;h2 id=&quot;user-content-011x-小细节&quot;&gt;011x 小细节&lt;/h2&gt;
+&lt;p&gt;日本人就喜欢搞小细节，我回忆下都看到了啥玩意&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;手机刷 Felica&lt;br&gt;
+JR 站台&lt;br&gt;
+自动贩卖机和 M 记刷的也是 Felica&lt;br&gt;
+曲线锯以及一堆木工工具&lt;br&gt;
+and so on...&lt;br&gt;
+&lt;del&gt;怎么就记得 felica 了&lt;/del&gt;&lt;br&gt;
+&lt;del&gt;新海诚 Felica 代言人说&lt;/del&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;user-content-100x-总结&quot;&gt;100x 总结&lt;/h2&gt;
+&lt;p&gt;总结？总结就是开头所说的，这是一步好电影，值得你话几十块钱去看一遍，但是封神的话…… 还有待商榷。&lt;del&gt;我认为新海诚的作品都应该封神&lt;/del&gt;&lt;br&gt;
+看完《铃芽之旅》也可以去看看《流浪地球 2》，强推，同时嘲讽某个春节票房榜一（&lt;del&gt;是你吗满江红&lt;/del&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[学习、日常和无线电考试]]></title><description><![CDATA[每次写东西都要把 markdown 速查表打开，感觉好诡异。 说 markdown 是很优雅的编写语言，反正我是没找到好用的 markdown 编辑器，现在在用 vscode 苟且偷生 ww
+ 总之，写下最近发生的事情吧。
+
+・00x 分班和学习
+
+很成功的被分到了普通班…]]></description><link>https://xlog.app/api/redirection?characterId=60902&amp;noteId=5</link><guid isPermaLink="false">60902-5</guid><category><![CDATA[post]]></category><dc:creator><![CDATA[冬瓜]]></dc:creator><pubDate>Fri, 24 Mar 2023 22:53:42 GMT</pubDate><content:encoded>&lt;p&gt;每次写东西都要把 markdown 速查表打开，感觉好诡异。&lt;br&gt;
+说 markdown 是很优雅的编写语言，反正我是没找到好用的 markdown 编辑器，现在在用 vscode 苟且偷生 ww&lt;br&gt;
+总之，写下最近发生的事情吧。&lt;/p&gt;
+&lt;p&gt;・00x 分班和学习&lt;/p&gt;
+&lt;p&gt;很成功的被分到了普通班！ 虽然我确实摆了点烂（指完全没上网课），在预料之中，但是落差感还是会有的。&lt;br&gt;
+也算是好事？至少现在有学习的动力了，不会像以前那样颓废了，回去把那堆混进重点班的人打下来是关键。&lt;br&gt;
+还有的话，人品和成绩不成正比，这个道理初中就知道了，遇到垃圾人就不要再和它吵来吵去……&lt;br&gt;
+卷啊！为啥不卷！中国的教育体系就是用来卷的，你不卷别人会卷，在这个循环里面上不去下不来，卡在这了。毕竟国家也不需要这么多的人才，人多人少都不差我一个，一个人的力量实在是太小了，能创造的也太少了，真正能改变世界的个人有很多，但是不是我，也不需要我。毕竟我天朝地大物博，无奇不有啊。&lt;/p&gt;
+&lt;p&gt;・01x 日常&lt;/p&gt;
+&lt;p&gt;日常啊，说起这个我还没看日常来着（ry&lt;br&gt;
+在学校能有啥日常，写题目写题目考试吃饭睡觉，千篇一律。&lt;br&gt;
+不过这学校倒是可以观察物种多样性，至少现在这个班就非常的抽象，也可以说是这个班主任非常抽象。&lt;del&gt;让我疯狂的，可爱女人&lt;/del&gt;&lt;br&gt;
+太可爱了他奶奶的，这个班主任已经低能到一定程度了，感觉每天见到她就像欠了她八百块钱一样呃呃&lt;br&gt;
+真不想说，不过上课没有问题，反正都是嗯造必刷题。&lt;br&gt;
+抽象人也不只班主任吧，有些垃圾人也挺抽象的，不评价。&lt;br&gt;
+说起来，最近在看《自然辩证法》这本书，&lt;del&gt;不过没看懂&lt;/del&gt;，其实我也差不多明白了国内那些 “觉醒” 哥的成分了。&lt;br&gt;
+灯    资本论      恩格斯&lt;br&gt;
+桌子桌子桌子桌子      马克思&lt;br&gt;
+“一些十几岁的初中生想用半个小时搞懂我们深邃的思想”&lt;br&gt;
+世 界 名 画&lt;br&gt;
+总之，路漫漫其修远兮啊，当反动分子也要先理解别人的理论如何才能更好的驳倒它，所谓‘知己知彼百战百胜’嘛。&lt;br&gt;
+争取早日看上《资本论》&lt;br&gt;
+还有《电工学》、《微机接口与原理技术》，本科教材其实也看得懂，但是还有很多基础知识没有学，现在就卷大学是不可能的，当课外书看吧。&lt;br&gt;
+笑话：为什么中国人讨厌 4？ 因为 4 是 0100&lt;br&gt;
+&lt;del&gt;比卤豆腐还冷&lt;/del&gt;&lt;br&gt;
+还有社团，摄影社目前为止三个星期活动了一次，可喜可贺&lt;/p&gt;
+&lt;p&gt;・10x 无线电&lt;/p&gt;
+&lt;p&gt;等了三百年，大清都亡了，我终于去考了 A 证，结束两年守听生涯。&lt;br&gt;
+&lt;img src=&quot;https://blog-1258513008.cos.ap-guangzhou.myqcloud.com/IMG_20230304_100439.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+考试前的骑车卡点&lt;br&gt;
+&lt;img src=&quot;https://blog-1258513008.cos.ap-guangzhou.myqcloud.com/IMG_20230311_125426.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+考场的牌子&lt;br&gt;
+&lt;img src=&quot;https://blog-1258513008.cos.ap-guangzhou.myqcloud.com/IMG_20230311_130225.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+考场内部&lt;br&gt;
+总体来说难度可以说是没有（&lt;br&gt;
+五分钟写完了，在考场等了十分钟才出来，希望能早日拿证&lt;/p&gt;
+&lt;p&gt;总的来说，这个月过得好也不好，努力吧。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[最近的一些事和牢骚]]></title><description><![CDATA[突然想起还有这个网站，找个时间来这写点东西 最近的事情其实也不能算很好，主要是开学，上五天学跟坐五天牢一样，每天凌晨五点五十被精确的呼噜声吵醒，上课被隔壁 dinner 烦死，整个学上下来人都要死了。
+ 不过和同学聊天啥的还是很舒服，很开心，但好像聊的起来的不是很多…]]></description><link>https://xlog.app/api/redirection?characterId=60902&amp;noteId=6</link><guid isPermaLink="false">60902-6</guid><category><![CDATA[post]]></category><dc:creator><![CDATA[冬瓜]]></dc:creator><pubDate>Fri, 10 Feb 2023 22:41:57 GMT</pubDate><content:encoded>&lt;p&gt;突然想起还有这个网站，找个时间来这写点东西&lt;br&gt;
+最近的事情其实也不能算很好，主要是开学，上五天学跟坐五天牢一样，每天凌晨五点五十被精确的呼噜声吵醒，上课被隔壁 dinner 烦死，整个学上下来人都要死了。&lt;br&gt;
+不过和同学聊天啥的还是很舒服，很开心，但好像聊的起来的不是很多，之前聊的挺好的现在好像不是很想和我聊天了，估计是玩农玩的。&lt;br&gt;
+开学之前一直在拍胶卷，两卷乐凯是自己冲洗出来的，后面有时间一定补个文～～(咕咕)~~&lt;br&gt;
+还有几卷电影卷，福马啥的&lt;br&gt;
+现在比较烦的事情就是选课，网课几个月下来等于没有上课，很担心能不能上重点。&lt;br&gt;
+还有 mc，拉上几个人进行一个生存的玩，肥肠爽。&lt;br&gt;
+想到再继续写吧。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[第二卷胶片，福马Pan100]]></title><description><![CDATA[作为一卷黑白卷，我买它的原因也不多，主要是我很穷相对于彩负有性价比，作为练手卷挺不错。  
+ 
+ 
+ 一卷下来合冲洗差不多一张两块，还算平价，这卷偷到了 40exp
+
+拍片其实和器材，没啥关系
+ 说实话福马 pan100 也不是高级卷，我也没用过高级的机器
+ 还是要慢慢学习慢慢练]]></description><link>https://xlog.app/api/redirection?characterId=60902&amp;noteId=11</link><guid isPermaLink="false">60902-11</guid><category><![CDATA[post]]></category><dc:creator><![CDATA[冬瓜]]></dc:creator><pubDate>Tue, 10 Jan 2023 22:01:10 GMT</pubDate><content:encoded>&lt;p&gt;作为一卷黑白卷，我买它的原因也不多，主要是&lt;del&gt;我很穷&lt;/del&gt;相对于彩负有性价比，作为练手卷挺不错。&lt;br&gt;
+&lt;img src=&quot;https://blog-1258513008.cos.ap-guangzhou.myqcloud.com/000015.JPG&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+&lt;img src=&quot;https://blog-1258513008.cos.ap-guangzhou.myqcloud.com/000021.JPG&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+&lt;img src=&quot;https://blog-1258513008.cos.ap-guangzhou.myqcloud.com/000036.JPG&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+&lt;img src=&quot;https://blog-1258513008.cos.ap-guangzhou.myqcloud.com/000035.JPG&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+一卷下来合冲洗差不多一张两块，还算平价，这卷偷到了 40exp&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;拍片其实和器材，没啥关系&lt;br&gt;
+说实话福马 pan100 也不是高级卷，我也没用过高级的机器&lt;br&gt;
+还是要慢慢学习慢慢练&lt;/p&gt;</content:encoded></item></channel></rss>
