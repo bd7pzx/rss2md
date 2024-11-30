@@ -17,8 +17,8 @@ jobs:
       - name: Run RSS Feed to Markdown Action
         uses: keiranlovett/rss-feed-to-markdown@main
         with:
-          feed_url: ''
-          feed_urls_file: 'feed.rss'
+          feed_url: '/feed.rss'
+          feed_urls_file: ''
           template_file: 'tp.md'
           output_dir: 'md'
           
